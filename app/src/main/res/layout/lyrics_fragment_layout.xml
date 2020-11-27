@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bottom_layout_height"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="150dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:id="@+id/sv_lyrics"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/ll_lyrics"
+                    android:layout_marginBottom="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="150dp"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/ll_lyrics_display"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/extra_padding"
+                android:textSize="30sp"
+                android:textColor="@color/colorTextSecondary"
+                android:gravity="center"
+                android:id="@+id/tv_lyrics_top"
+                android:layout_marginBottom="@dimen/extra_padding" />
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/extra_padding"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginBottom="@dimen/extra_padding"
+                android:gravity="center"
+                android:id="@+id/tv_lyrics_center"/>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/coordinator_layout"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="5"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/et_center_lyric"
+                    android:textColor="@color/colorTextPrimary"
+                    android:padding="@dimen/extra_padding"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:textSize="22sp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/iv_submit_lyric"
+                    android:foreground="?attr/actionBarItemBackground"
+                    android:layout_marginRight="@dimen/extra_margin"
+                    android:layout_marginEnd="@dimen/extra_margin"
+                    android:src="@drawable/ic_action_check"/>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/extra_padding"
+                android:textSize="30sp"
+                android:textColor="@color/colorTextSecondary"
+                android:gravity="center"
+                android:id="@+id/tv_lyrics_bottom" />
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@drawable/divider_small"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="@dimen/extra_half_padding"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/tr_lyrics_editing"
+            android:layout_height="wrap_content">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/enable_lyrics_editing"
+                android:id="@+id/mtv_lyrics_editing"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:padding="@dimen/extra_half_padding"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:id="@+id/switch_lyrics_editing"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@drawable/divider_small"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="@dimen/extra_half_padding"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/bottom_layout_height"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/tr_lyrics"
+            android:layout_height="wrap_content">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/enable_lyrics"
+                android:textColor="@color/colorTextPrimary"
+                android:id="@+id/mtv_lyrics"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/extra_half_padding"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:id="@+id/switch_lyrics"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+

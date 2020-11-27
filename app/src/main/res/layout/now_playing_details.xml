@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/vp_now_playing"/>
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/song_row_album_details"/>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.robinhood.ticker.TickerView
+            android:layout_width="wrap_content"
+            android:text="@string/run_time"
+            android:paddingStart="@dimen/padding_max"
+            android:paddingEnd="@dimen/padding_half"
+            android:id="@+id/tv_run_time_now_playing"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="center"
+            android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/sbNowPlaying" />
+
+        <com.robinhood.ticker.TickerView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_half"
+            android:paddingEnd="@dimen/padding_max"
+            android:id="@+id/tv_total_time_now_playing"
+            android:text="@string/total_time"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/extra_half_padding"
+        android:paddingLeft="@dimen/extra_padding"
+        android:paddingStart="@dimen/extra_padding"
+        android:paddingRight="@dimen/extra_padding"
+        android:paddingEnd="@dimen/extra_padding"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/bottom_layout_icon_width"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:id="@+id/iv_previous_now_playing"
+            android:src="@drawable/ic_action_previous"
+            android:foreground="?attr/actionBarItemBackground"
+            android:background="@drawable/button_background"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/previous_track"
+            android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+        <ImageView
+            android:layout_width="@dimen/bottom_layout_icon_width"
+            android:src="@drawable/icon_play"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:id="@+id/iv_play_pause_now_playing"
+            android:foreground="?attr/actionBarItemBackground"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/play_pause"
+            android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+        <ImageView
+            android:layout_width="@dimen/bottom_layout_icon_width"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:id="@+id/iv_next_now_playing"
+            android:background="@drawable/button_background"
+            android:src="@drawable/ic_action_next"
+            android:foreground="?attr/actionBarItemBackground"
+            android:contentDescription="@string/next_track"
+            android:scaleType="fitCenter"
+            android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+    </TableRow>
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tr_shuffle"/>
+
+</LinearLayout>

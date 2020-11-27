@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/toolbar_main"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/PopupMenuStyle"
+    android:theme="@style/MyToolbarTextView"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="wrap_content"
+        android:id="@+id/search_view"
+        android:layout_gravity="end"
+        app:queryHint="@string/search_music"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/search_view_background"
+        android:layout_height="35dp"/>
+
+
+</androidx.appcompat.widget.Toolbar>
+

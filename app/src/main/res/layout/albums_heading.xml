@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<player.music.customviews.UbuntuTextView
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:text="@string/albums"
+    android:background="@drawable/dv_heading_left"
+    android:padding="@dimen/extra_half_padding"
+    android:transitionName="@string/album_count"
+    android:paddingLeft="@dimen/extra_padding"
+    android:paddingStart="@dimen/extra_padding"
+    android:paddingRight="@dimen/extra_padding"
+    android:paddingEnd="@dimen/extra_padding"
+    android:textColor="@color/colorTextPrimary"
+    android:id="@+id/mtv_albums_count"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+

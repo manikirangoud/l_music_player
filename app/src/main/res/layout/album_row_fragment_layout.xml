@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/album_icon"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/album_thumbnail"
+            android:background="@color/colorBackgroundTertiary"
+            android:id="@+id/iv_album"
+            android:layout_height="190dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/dv_medium_bg_primary"
+            android:id="@+id/ll_album"
+            android:paddingTop="@dimen/common_image_padding"
+            android:paddingStart="@dimen/padding_half"
+            android:paddingBottom="@dimen/padding_half"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <player.music.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/album_title"
+                    android:textStyle="bold"
+                    android:transitionName="@string/toolbar_title"
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/text_view_album_name_album_layout"
+                    android:textSize="@dimen/text_small_16sp"
+                    android:layout_marginBottom="@dimen/margin_min"
+                    android:singleLine="true" />
+
+                <player.music.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:id="@+id/text_view_artist_name_album_layout"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone"
+                    android:hint="@string/artist_name"
+                    android:singleLine="true" />
+
+                <player.music.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:paddingBottom="@dimen/text_padding"
+                    android:text="@string/track_count"
+                    android:transitionName="@string/track_count"
+                    android:textColor="@color/colorTextSecondary"
+                    android:id="@+id/text_view_number_of_tracks_album_layout"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+           <!-- <android.support.v7.widget.CardView
+                android:layout_width="@dimen/fab_min_width"
+                app:cardCornerRadius="@dimen/fab_min_radius"
+                app:cardElevation="@dimen/fab_1dp_elevation"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/actionBarItemBackground"
+                android:layout_margin="@dimen/margin_half"
+                android:layout_height="@dimen/fab_min_height">-->
+
+                <ImageView
+                    android:layout_width="@dimen/overflow_icon_width"
+                    android:layout_height="@dimen/overflow_icon_height"
+                    android:src="@drawable/ic_overflow_menu"
+                    android:id="@+id/iv_overflow_menu"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/actionBarItemBackground"
+                    android:transitionName="@string/album_overflow"
+                    android:background="@color/colorBackgroundPrimaryLight"
+                    android:contentDescription="@string/overflow_button"
+                    android:padding="@dimen/fab_half_padding"/>
+            <!--</android.support.v7.widget.CardView>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:transitionName="@string/artist_image"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/image_artist_artist_details_row_width"
+            android:contentDescription="@string/artist_icon"
+            android:id="@+id/iv_artist_art"
+            android:background="@color/colorBackgroundTertiary"
+            android:layout_height="@dimen/image_artist_artist_details_row_width" />
+
+        <player.music.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/mtv_artist_start_letters"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/extra_half_padding"
+        android:paddingRight="@dimen/extra_half_padding"
+        android:paddingStart="@dimen/extra_half_padding"
+        android:paddingEnd="@dimen/extra_half_padding"
+        android:layout_height="wrap_content">
+
+        <player.music.customviews.UbuntuTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/artist_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:paddingBottom="@dimen/text_padding"
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/utv_artist_name"
+            android:singleLine="true" />
+
+<!--        <player.music.customviews.UbuntuTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingBottom="@dimen/text_padding"-->
+<!--            android:id="@+id/mtv_number_of_albums"-->
+<!--            android:textSize="@dimen/text_size_small"-->
+<!--            android:textColor="@color/colorTextSecondary"-->
+<!--            android:text="@string/number_of_albums"-->
+<!--            android:singleLine="true" />-->
+
+<!--        <player.music.customviews.UbuntuTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingBottom="@dimen/text_padding"-->
+<!--            android:id="@+id/mtv_number_of_tracks"-->
+<!--            android:textSize="@dimen/text_size_small"-->
+<!--            android:textColor="@color/colorTextSecondary"-->
+<!--            android:text="@string/number_of_tracks"-->
+<!--            android:singleLine="true" />-->
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/extra_half_padding"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/time_symbol_width"
+                android:layout_height="@dimen/time_symbol_height"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_duration"
+                android:contentDescription="@string/duration"
+                android:id="@+id/time_symbol_artist_detail_row"
+                android:scaleType="centerInside"/>
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:paddingLeft="@dimen/extra_half_padding"
+                android:paddingStart="@dimen/extra_half_padding"
+                android:paddingRight="@dimen/extra_half_padding"
+                android:paddingEnd="@dimen/extra_half_padding"
+                android:id="@+id/artist_duration_artist_detail_row"
+                android:textColor="@color/colorTextSecondary"
+                android:text="@string/artist_duration"
+                android:singleLine="true" />
+
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

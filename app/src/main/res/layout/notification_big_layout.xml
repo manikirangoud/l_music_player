@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/colorBackgroundPrimary"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/notification_big_controls_album_icon_width"
+        android:contentDescription="@string/album_icon"
+        android:src="@drawable/album_icon"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_view_album_notification_big_layout"
+        android:layout_height="@dimen/notification_big_controls_album_icon_height"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/common_layout_margin_top"
+        android:layout_marginStart="@dimen/common_layout_margin_left"
+        android:layout_marginLeft="@dimen/common_layout_margin_left"
+        android:layout_marginRight="@dimen/common_layout_margin_right"
+        android:layout_marginEnd="@dimen/common_layout_margin_right"
+        android:layout_marginBottom="@dimen/common_layout_margin_bottom"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/track_title"
+                android:singleLine="true"
+                android:id="@+id/text_view_song_title_notification_big_layout"
+                android:layout_marginBottom="@dimen/common_view_margin_bottom"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/artist_name"
+                android:singleLine="true"
+                android:id="@+id/text_view_artist_name_notification_big_layout"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/common_view_margin_bottom"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/notification_big_stop_service_width"
+                android:layout_height="@dimen/notification_big_stop_service_height"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="@dimen/common_other_layout_margin"
+                android:layout_marginEnd="@dimen/common_other_layout_margin"
+                android:contentDescription="@string/stop_service"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_button_service_stop_big_notification"
+                android:src="@drawable/ic_stop_service"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/common_view_margin_bottom"
+            android:contentDescription="@string/view_line"
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/common_layout_margin_bottom"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/notification_big_controls_width"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/button_overflow_selector"
+                android:contentDescription="@string/previous_track"
+                android:src="@drawable/ic_action_previous"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_view_previous_track_notification_big_layout"
+                android:layout_height="@dimen/notification_big_controls_height" />
+
+            <ImageView
+                android:layout_width="@dimen/notification_big_controls_width"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/play_pause"
+                android:src="@drawable/icon_play"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/button_overflow_selector"
+                android:id="@+id/image_view_play_pause_notification_big_layout"
+                android:layout_marginLeft="@dimen/notification_big_controls_margin"
+                android:layout_marginRight="@dimen/notification_big_controls_margin"
+                android:layout_height="@dimen/notification_big_controls_height" />
+
+            <ImageView
+                android:layout_width="@dimen/notification_big_controls_width"
+                android:contentDescription="@string/next_track"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_view_next_track_notification_big_layout"
+                android:background="@drawable/button_overflow_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_action_next"
+                android:layout_height="@dimen/notification_big_controls_height" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

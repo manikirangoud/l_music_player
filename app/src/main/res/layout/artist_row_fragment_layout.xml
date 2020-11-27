@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:padding="@dimen/extra_padding"
+    android:paddingStart="@dimen/extra_padding"
+    android:paddingEnd="@dimen/extra_half_padding"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/artist_layout_artist_image_width"
+        android:layout_height="@dimen/artist_layout_artist_image_height"
+        android:transitionName="@string/artist_image"
+        android:id="@+id/cv_artist_short_name"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:padding="@dimen/common_image_padding">
+
+        <player.music.customviews.UbuntuTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorBackgroundTertiary"
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/mtv_artist_letters"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/extra_padding"
+        android:paddingEnd="@dimen/image_padding_right">
+
+
+        <player.music.customviews.UbuntuTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small_16sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:transitionName="@string/artist_name"
+            android:paddingBottom="@dimen/text_padding"
+            android:text="@string/artist_name"
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/utv_artist_name"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:transitionName="@string/album_count"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/text_size_small"
+                android:text="@string/zero_album"
+                android:id="@+id/utv_album_count" />
+
+
+            <ImageView
+                android:layout_width="@dimen/dot_width"
+                android:layout_height="@dimen/dot_height"
+                android:layout_marginStart="@dimen/margin_min"
+                android:layout_marginEnd="@dimen/margin_min"
+                android:padding="@dimen/padding_min"
+                android:contentDescription="@string/dot"
+                android:src="@drawable/circle_dot_outline"/>
+
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:transitionName="@string/track_count"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/text_size_small"
+                android:text="@string/zero_track"
+                android:id="@+id/utv_track_count" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/overflow_icon_width"
+        android:src="@drawable/ic_overflow_menu"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:contentDescription="@string/overflow_button"
+        android:scaleType="centerInside"
+        android:transitionName="@string/overflow_button"
+        android:id="@+id/iv_overflow_menu"
+        android:layout_height="@dimen/overflow_icon_width">
+
+    </ImageView>
+
+</LinearLayout>

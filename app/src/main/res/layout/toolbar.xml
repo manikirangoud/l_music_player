@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/PopupMenuStyle"
+    android:theme="@style/MyToolbarTextView"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/fab_min_width"
+        app:cardCornerRadius="@dimen/fab_min_radius"
+        app:cardElevation="@dimen/fab_max_elevation"
+        android:clickable="true"
+        android:id="@+id/cv_fab_back"
+        android:focusable="true"
+        android:transitionName="@string/overflow_button"
+        android:foreground="?attr/actionBarItemBackground"
+        android:layout_marginEnd="@dimen/margin_max"
+        android:layout_height="@dimen/fab_min_height">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/left_arrow"
+            android:background="@color/colorBackgroundPrimaryLight"
+            android:contentDescription="@string/back"
+            android:padding="@dimen/fab_padding"/>
+    </androidx.cardview.widget.CardView>
+
+    <player.music.customviews.UbuntuTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:transitionName="@string/toolbar_title"
+        android:id="@+id/utv_title"/>
+
+</androidx.appcompat.widget.Toolbar>
+
+

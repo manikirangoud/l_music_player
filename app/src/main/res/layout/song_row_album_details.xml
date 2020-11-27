@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/extra_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <player.music.customviews.UbuntuTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingBottom="@dimen/extra_half_padding"
+            android:textSize="@dimen/text_small_16sp"
+            android:id="@+id/utv_track_title"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/track_title"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_layout_padding_bottom"
+                android:textSize="@dimen/text_size_small"
+                android:singleLine="true"
+                android:text="@string/artist_name"
+                android:id="@+id/utv_artist_name"
+                android:textColor="@color/colorTextSecondary" />
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:paddingLeft="@dimen/extra_half_padding"
+                android:paddingStart="@dimen/extra_half_padding"
+                android:textColor="@color/colorTextSecondary"
+                android:id="@+id/utv_track_duration"
+                android:text="@string/track_duration" />
+
+        </TableRow>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/overflow_icon_width"
+        android:src="@drawable/ic_overflow_menu"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:contentDescription="@string/overflow_button"
+        android:scaleType="centerInside"
+        android:id="@+id/iv_overflow_menu"
+        android:layout_height="match_parent">
+    </ImageView>
+
+
+</LinearLayout>

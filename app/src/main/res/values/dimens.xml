@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--COMMON DIMENS OF ALL VIEWS-->
+    <dimen name="common_view_margin_top">3dp</dimen>
+    <dimen name="common_view_margin_left">3dp</dimen>
+    <dimen name="common_view_margin_right">3dp</dimen>
+    <dimen name="common_view_margin_bottom">3dp</dimen>
+    <dimen name="common_view_layout_height">1dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="text_small_16sp">16sp</dimen>
+
+
+<!--COMMON DIMENS OF A LAYOUT-->
+    <dimen name="common_layout_margin_top">3dp</dimen>
+    <dimen name="common_layout_margin_left">3dp</dimen>
+    <dimen name="common_layout_margin_right">3dp</dimen>
+    <dimen name="common_layout_margin_bottom">3dp</dimen>
+    <dimen name="common_layout_padding_top">3dp</dimen>
+    <dimen name="common_layout_padding_left">3dp</dimen>
+    <dimen name="common_layout_padding_right">3dp</dimen>
+    <dimen name="common_layout_padding_bottom">3dp</dimen>
+    <dimen name="common_other_layout_margin">5dp</dimen>
+    <dimen name="common_other_layout_padding">5dp</dimen>
+    <dimen name="common_image_padding">3dp</dimen>
+
+    <!-- Common Paddings And Margins-->
+    <dimen name="margin_max">16dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="margin_min">4dp</dimen>
+    <dimen name="padding_max">16dp</dimen>
+    <dimen name="padding_half">8dp</dimen>
+    <dimen name="padding_min">4dp</dimen>
+    <dimen name="layout_padding_bottom">100dp</dimen>
+    <dimen name="layout_margin_bottom">100dp</dimen>
+
+
+
+<!--DIMENS OF ALL VIEWS IN THE ALBUM LAYOUT-->
+    <dimen name="album_image_height">350dp</dimen>
+    <dimen name="overflow_icon_padding_right_album_layout">25dp</dimen>
+    <dimen name="text_margin_top">7dp</dimen>
+    <dimen name="text_padding">5dp</dimen>
+    <dimen name="text_layout_padding_left">8dp</dimen>
+    <dimen name="extra_half_padding">8dp</dimen>
+    <dimen name="text_layout_padding_right">8dp</dimen>
+
+
+
+<!--DIMENS OF ALL VIEWS IN SONGS LAYOUT-->
+    <dimen name="song_layout_album_image_width">50dp</dimen>
+    <dimen name="song_layout_album_image_height">50dp</dimen>
+    <dimen name="song_layout_padding_left">7dp</dimen>
+    <dimen name="image_padding_right">7dp</dimen>
+
+<!--DIMENS OF ALL VIEWS IN ARTISTS LAYOUT-->
+    <dimen name="artist_layout_artist_image_width">50dp</dimen>
+    <dimen name="artist_layout_artist_image_height">50dp</dimen>
+    <dimen name="artist_layout_padding_left">7dp</dimen>
+    <dimen name="artist_layout_padding_right">7dp</dimen>
+
+<!--COMMON DIMENS OF A CARD VIEW-->
+    <dimen name="common_card_view_corner_radius">2dp</dimen>
+    <dimen name="common_card_view_elevation">3dp</dimen>
+    <dimen name="card_elevation_one_dp">1dp</dimen>
+    <dimen name="common_cardview_radius">3dp</dimen>
+
+
+
+<!--DIMENS OF MAIN TOOLBAR-->
+    <dimen name="toolbar_main_elevation">5dp</dimen>
+
+<!--EXTRA MARGINS OF A COMMON LAYOUT-->
+    <dimen name="extra_common_layout_margin_left">16dp</dimen>
+    <dimen name="extra_common_layout_margin_right">16dp</dimen>
+    <dimen name="extra_padding">16dp</dimen>
+
+<!--DIMENS OF TIME SYMBOL-->
+    <dimen name="time_symbol_height">15dp</dimen>
+    <dimen name="time_symbol_width">15dp</dimen>
+
+<!--DIMENS OF ALL VIEWS IN BOTTOM SONG PLAYING LAYOUT-->
+    <dimen name="bottom_song_playing_layout_height">70dp</dimen>
+    <dimen name="iv_album_bottom_height">60dp</dimen>
+    <dimen name="iv_album_bottom_width">60dp</dimen>
+    <dimen name="song_control_image_bottom_song_playing_layout_width">40dp</dimen>
+    <dimen name="song_control_image_bottom_song_playing_layout_height">40dp</dimen>
+
+
+<!--DIMENS OF ALL VIEWS IN BOTTOM SONG EXTRA PLAYING LAYOUT-->
+    <dimen name="bottom_layout_height">70dp</dimen>
+    <dimen name="bottom_layout_icon_width">30dp</dimen>
+    <dimen name="bottom_layout_icon_height">30dp</dimen>
+
+
+<!--DIMENS OF ALL VIEW IN SEARCH LAYOUT-->
+    <dimen name="image_cancel_search_layout_width">20dp</dimen>
+    <dimen name="image_cancel_search_layout_height">20dp</dimen>
+
+<!--DIMENS OF ALL VIEWS IN ARTIST DETAILS ROW LAYOUT-->
+    <dimen name="image_artist_artist_details_row_width">100dp</dimen>
+    <dimen name="image_artist_artist_details_row_height">100dp</dimen>
+    <dimen name="image_album_artist_details_layout_height">150dp</dimen>
+    <dimen name="image_album_artist_details_layout_width">140dp</dimen>
+    <dimen name="album_artist_details_layout_width">120dp</dimen>
+
+
+<!--NOTIFICATION BIG AND SMALL DIMENS-->
+    <dimen name="notification_big_controls_height">40dp</dimen>
+    <dimen name="notification_big_controls_width">40dp</dimen>
+    <dimen name="notification_small_controls_height">40dp</dimen>
+    <dimen name="notification_small_controls_width">40dp</dimen>
+    <dimen name="notification_big_controls_margin">30dp</dimen>
+    <dimen name="notification_small_controls_margin">5dp</dimen>
+    <dimen name="notification_big_controls_album_icon_height">130dp</dimen>
+    <dimen name="notification_big_controls_album_icon_width">130dp</dimen>
+    <dimen name="notification_small_controls_album_icon_height">64dp</dimen>
+    <dimen name="notification_small_controls_album_icon_width">64dp</dimen>
+    <dimen name="notification_big_stop_service_height">30dp</dimen>
+    <dimen name="notification_big_stop_service_width">30dp</dimen>
+    <dimen name="notification_small_stop_service_height">25dp</dimen>
+    <dimen name="notification_small_stop_service_width">25dp</dimen>
+
+<!--OVERFLOW ICON DIMENS-->
+    <dimen name="overflow_icon_width">40dp</dimen>
+    <dimen name="overflow_elevation">7dp</dimen>
+    <dimen name="overflow_background_radius">25dp</dimen>
+    <dimen name="overflow_background_height">50dp</dimen>
+    <dimen name="overflow_background_width">50dp</dimen>
+    <dimen name="common_text_padding">3dp</dimen>
+    <dimen name="extra_margin">16dp</dimen>
+    <dimen name="extra_half_margin">8dp</dimen>
+    <dimen name="overflow_icon_height">40dp</dimen>
+    <dimen name="action_left_chevron_width">40dp</dimen>
+    <dimen name="song_album_art_radius">30dp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="rv_padding_between">8dp</dimen>
+
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="no_elevation">0dp</dimen>
+    <dimen name="progress_bar_height">2dp</dimen>
+    <dimen name="progress_bar_margin_bottom">2dp</dimen>
+    <dimen name="iv_album_bottom_radius">60dp</dimen>
+    <dimen name="bottom_song_seek_bar_height">7dp</dimen>
+
+
+
+    <!-- Fab Dimens -->
+    <dimen name="fab_smin_width">30dp</dimen>
+    <dimen name="fab_smin_height">30dp</dimen>
+    <dimen name="fab_min_width">40dp</dimen>
+    <dimen name="fab_min_height">40dp</dimen>
+    <dimen name="fab_max_width">50dp</dimen>
+    <dimen name="fab_max_height">50dp</dimen>
+    <dimen name="fab_padding">12dp</dimen>
+    <dimen name="fab_half_padding">6dp</dimen>
+    <dimen name="fab_max_radius">25dp</dimen>
+    <dimen name="fab_min_radius">20dp</dimen>
+    <dimen name="fab_max_elevation">7dp</dimen>
+    <dimen name="fab_min_elevation">3dp</dimen>
+    <dimen name="fab_1dp_elevation">1dp</dimen>
+    <!-- Common Card Dimens -->
+    <dimen name="common_card_radius">8dp</dimen>
+    <dimen name="iv_empty_layout">300dp</dimen>
+    <dimen name="posted_time_text_size">12sp</dimen>
+
+
+    <!-- Dot Dimens -->
+    <dimen name="dot_width">15dp</dimen>
+    <dimen name="dot_height">15dp</dimen>
+
+
+</resources>

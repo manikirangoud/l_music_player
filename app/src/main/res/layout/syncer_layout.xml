@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/song_row_fragment_layout"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/extra_padding"
+            android:paddingLeft="@dimen/extra_padding"
+            android:paddingStart="@dimen/extra_padding"
+            android:paddingRight="@dimen/extra_padding"
+            android:paddingEnd="@dimen/extra_padding"
+            android:paddingBottom="@dimen/extra_half_padding"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/save_lyrics"
+                android:id="@+id/button_save_lyrics"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginEnd="@dimen/extra_margin"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/add_lyrics"
+                android:id="@+id/button_select_file"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorTextPrimary"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="300dp">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_22sp"
+                android:textColor="@color/colorTextSecondary"
+                android:gravity="center"
+                android:id="@+id/tv_lyric_top"
+                android:padding="@dimen/extra_half_padding" />
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textColor="@color/colorTextPrimary"
+                android:gravity="center"
+                android:id="@+id/tv_lyric_center"
+                android:padding="@dimen/extra_padding" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/coordinator_layout"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="5"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/et_center_lyric"
+                    android:textColor="@color/colorTextPrimary"
+                    android:padding="@dimen/extra_padding"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:textSize="22sp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/iv_submit_lyric"
+                    android:foreground="?attr/actionBarItemBackground"
+                    android:layout_marginRight="@dimen/extra_margin"
+                    android:layout_marginEnd="@dimen/extra_margin"
+                    android:src="@drawable/ic_action_check"/>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/text_size_22sp"
+                android:gravity="center"
+                android:id="@+id/tv_lyric_bottom"
+                android:padding="@dimen/extra_half_padding" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_bar_syncer"
+            android:layout_margin="@dimen/extra_half_margin"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/extra_padding"
+            android:paddingStart="@dimen/extra_padding"
+            android:paddingRight="@dimen/extra_padding"
+            android:paddingEnd="@dimen/extra_padding"
+            android:layout_height="wrap_content">
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_current_time"
+                android:layout_height="wrap_content"
+                android:text="@string/run_time"/>
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/tv_progress_time"
+                android:layout_height="wrap_content" />
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:id="@+id/tv_total_time"
+                android:layout_height="wrap_content"
+                android:text="@string/total_time"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/extra_margin"
+            android:layout_marginStart="@dimen/extra_margin"
+            android:layout_marginRight="@dimen/extra_margin"
+            android:layout_marginEnd="@dimen/extra_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_lyric_up"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:foreground="?attr/actionBarItemBackground"
+                android:src="@drawable/ic_action_up_dark" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:text="@string/play"
+                android:layout_weight="1"
+                android:src="@drawable/icon_play"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/actionBarItemBackground"
+                android:id="@+id/iv_play_pause"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_lyric_down"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:foreground="?attr/actionBarItemBackground"
+                android:src="@drawable/ic_action_down_dark" />
+
+        </TableRow>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/sync_lyric"
+            android:id="@+id/button_sync_lyric"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_margin="@dimen/extra_margin"
+            android:textColor="@color/colorTextPrimary"
+            android:background="@drawable/button_background"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/cl_add_line"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/et_add_line"
+                android:textColor="@color/colorTextPrimary"
+                android:padding="@dimen/extra_padding"
+                android:layout_marginRight="70dp"
+                android:layout_marginEnd="70dp"
+                android:textSize="22sp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end|center"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/iv_submit_line"
+                android:foreground="?attr/actionBarItemBackground"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginEnd="@dimen/extra_margin"
+                android:src="@drawable/ic_action_check"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/extra_padding"
+            android:paddingLeft="@dimen/extra_padding"
+            android:paddingStart="@dimen/extra_padding"
+            android:paddingRight="@dimen/extra_padding"
+            android:paddingEnd="@dimen/extra_padding"
+            android:paddingBottom="@dimen/extra_half_padding"
+            android:id="@+id/tr_add_line"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/add_lyric_before"
+                android:id="@+id/btn_add_lyric_before"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginEnd="@dimen/extra_margin"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/add_lyric_after"
+                android:id="@+id/btn_add_lyric_after"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorTextPrimary"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+</ScrollView>

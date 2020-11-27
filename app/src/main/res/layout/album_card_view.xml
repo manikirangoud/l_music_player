@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="@dimen/album_artist_details_layout_width"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorBackgroundTertiary"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/image_album_artist_details_layout_width"
+            android:layout_height="@dimen/image_album_artist_details_layout_height"
+            android:contentDescription="@string/album_icon"
+            android:scaleType="fitXY"
+            android:transitionName="@string/album_thumbnail"
+            android:id="@+id/iv_album_art"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/iv_album_art"
+            android:background="@drawable/dv_small_bg_primary"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <player.music.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_text_padding"
+                    android:text="@string/album_title"
+                    android:transitionName="@string/album_title"
+                    android:id="@+id/mtv_album_title"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_small_16sp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:singleLine="true" />
+
+                <player.music.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:padding="@dimen/common_text_padding"
+                    android:transitionName="@string/number_of_tracks"
+                    android:id="@+id/mtv_no_of_tracks"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/tracks"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/overflow_icon_width"
+                android:src="@drawable/ic_overflow_menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:transitionName="@string/album_overflow"
+                android:foreground="?attr/actionBarItemBackground"
+                android:contentDescription="@string/overflow_button"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_overflow_menu"
+                android:layout_height="@dimen/overflow_icon_height"/>
+
+        </TableRow>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

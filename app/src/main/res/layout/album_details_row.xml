@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/fab_min_width"
+                app:cardCornerRadius="@dimen/fab_min_radius"
+                app:cardElevation="@dimen/fab_max_elevation"
+                android:clickable="true"
+                android:id="@+id/cv_fab_back"
+                android:focusable="true"
+                android:transitionName="@string/overflow_button"
+                android:foreground="?attr/actionBarItemBackground"
+                android:layout_margin="@dimen/margin_half"
+                android:layout_height="@dimen/fab_min_height">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_arrow"
+                    android:id="@+id/iv_action_back"
+                    android:background="@color/colorBackgroundPrimaryLight"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/fab_padding"/>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/album_icon"
+                android:scaleType="fitXY"
+                android:transitionName="@string/album_thumbnail"
+                android:id="@+id/image_view_album_album_detail"
+                android:layout_height="@dimen/album_image_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_alignBottom="@id/image_view_album_album_detail"
+                android:background="@drawable/dv_medium_bg_secondary"
+                android:paddingLeft="@dimen/extra_padding"
+                android:paddingStart="@dimen/extra_padding"
+                android:paddingRight="@dimen/extra_padding"
+                android:paddingEnd="@dimen/extra_padding"
+                android:paddingTop="@dimen/extra_half_padding"
+                android:paddingBottom="@dimen/extra_half_padding"
+                android:layout_height="wrap_content">
+
+                <player.music.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/album_title"
+                    android:textSize="@dimen/text_small_16sp"
+                    android:transitionName="@string/album_title"
+                    android:textColor="@color/colorTextPrimary"
+                    android:paddingBottom="@dimen/extra_half_padding"
+                    android:textStyle="bold"
+                    android:id="@+id/text_view_album_name_album_detail"
+                    android:singleLine="true" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/extra_half_padding"
+                    android:layout_height="wrap_content">
+
+                    <player.music.customviews.UbuntuTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_album_year_album_detail"
+                        android:textColor="@color/colorTextSecondary"
+                        android:layout_weight="1"
+                        android:text="@string/album_year"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/time_symbol_width"
+                        android:layout_height="@dimen/time_symbol_height"
+                        android:contentDescription="@string/album_duration"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_duration"
+                        android:id="@+id/time_symbol_album_detail_row"
+                        android:scaleType="centerInside"/>
+
+                    <player.music.customviews.UbuntuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_layout_margin_left"
+                        android:layout_marginStart="@dimen/common_layout_margin_left"
+                        android:id="@+id/album_duration_album_detail_row"
+                        android:textColor="@color/colorTextSecondary"
+                        android:singleLine="true" />
+                </TableRow>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

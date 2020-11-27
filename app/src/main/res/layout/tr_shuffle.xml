@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/tr_shuffle"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <include
+        layout="@layout/songs_heading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:paddingStart="@dimen/extra_padding"
+        android:paddingEnd="@dimen/extra_half_padding"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/icon_play"
+            android:layout_width="40dp"
+            android:padding="@dimen/common_other_layout_margin"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/actionBarItemBackground"
+            android:contentDescription="@string/shuffle_all"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:src="@drawable/ic_action_shuffle_on"
+            android:layout_width="40dp"
+            android:padding="@dimen/common_other_layout_margin"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/iv_shuffle"
+            android:foreground="?attr/actionBarItemBackground"
+            android:layout_marginEnd="@dimen/extra_half_margin"
+            android:contentDescription="@string/shuffle_all"
+            android:layout_height="40dp" />
+
+    </TableRow>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar_search"
+    style="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/artist_layout_padding_left"
+        android:layout_marginStart="@dimen/artist_layout_padding_left"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_music"
+        android:maxLines="1"
+        android:textColor="@color/colorWhite"
+        android:layout_weight="1"
+        android:inputType="textFilter"
+        android:id="@+id/edit_text_search_search_layout"
+        android:textColorHint="@color/colorWhite"/>
+
+        <ImageView
+            android:layout_width="@dimen/image_cancel_search_layout_width"
+            android:layout_height="@dimen/image_cancel_search_layout_height"
+            android:src="@drawable/ic_cancel"
+            android:background="?android:selectableItemBackground"
+            android:id="@+id/image_view_cancel_search_layout"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/artist_layout_padding_right"
+            android:layout_marginEnd="@dimen/artist_layout_padding_right"/>
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

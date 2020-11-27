@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--ANIMATION DURATIONS-->
+    <integer name="duration_sliding_activity">200</integer>
+</resources>

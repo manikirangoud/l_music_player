@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group  android:orderInCategory="100">
+
+        <item
+            android:title="@string/search"
+            android:id="@+id/main_menu_item_1"
+            android:icon="@drawable/ic_search" />
+
+        <item
+            android:title="@string/feedback"
+            android:id="@+id/main_menu_item_2"/>
+
+        <item
+            android:title="@string/rate_app"
+            android:id="@+id/main_menu_item_3"/>
+
+        <item
+            android:title="@string/share"
+            android:id="@+id/main_menu_item_4"/>
+
+        <item
+            android:title="@string/settings"
+            android:id="@+id/main_menu_item_5"/>
+
+
+
+    </group>
+
+
+</menu>

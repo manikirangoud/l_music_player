@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--    <color name="colorAccent">#c67a7e</color>-->
+    <color name="colorAccent">#212121</color>
+<!--Primary color after setting alpha-->
+<!--    <color name="colorPrimary">#ffe082</color>-->
+
+
+
+    <color name="colorPrimary">#ffffffff</color>
+    <color name="colorPrimaryDark">#ffffffff</color>
+
+
+
+
+    <!--<color name="colorPrimary">#ffe082</color>-->
+<!--    <color name="colorPrimary">#c5e1a5</color>-->
+<!--Blurred color after setting alpha-->
+<!--    <color name="colorPrimaryDark">#ffe082</color>-->
+<!--    <color name="colorPrimaryDark">#c5e1a5</color>-->
+
+
+<!--    <color name="colorTextPrimary">#0275d8</color>
+    <color name="colorTextSecondary">#dd0275d8</color>
+    <color name="colorTextTertiary">#440275d8</color>-->
+
+
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#dd616161</color>
+    <color name="colorTextTertiary">#44616161</color>
+
+
+
+    <!--
+        getMutedColor can be set as toolbar background color;
+    -->
+
+
+  <!--  <color name="colorBackgroundPrimary">#eefafafa</color>
+    <color name="colorBackgroundSecondary">#17000000</color>
+    <color name="colorBackgroundTertiary">#77fafafa</color>
+
+    <color name="colorBackgroundTransparent">#00fafafa</color>
+-->
+
+    <!--<color name="colorBackgroundPrimary">#ffffffff</color>
+    <color name="colorBackgroundSecondary">#efffffff</color>
+    <color name="colorBackgroundTertiary">#ffF5F5F5</color>-->
+
+    <!-- Background Colors -->
+    <color name="colorBackgroundPrimary">#ffffffff</color>
+    <color name="colorBackgroundPrimaryLight">#99ffffff</color>
+    <color name="colorBackgroundSecondary">#efeeeeee</color>
+    <color name="colorBackgroundTertiary">#ffF5F5F5</color>
+
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorLightTransparent">#55ffffff</color>
+    <color name="colorSelectedBackground">#11212121</color>
+
+
+
+    <color name="colorBackgroundTransparent">#00fafafa</color>
+
+
+
+
+    <!--COMMON COLORS -->
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorOverflowPressed">#B0BEC5</color>
+    <color name="colorLightBlueBackground">#E3F2FD</color>
+
+
+
+
+    <color name="colorPrimaryRed">#ccc03810</color>
+    <color name="colorPrimaryDarkRed">#ccc03810</color>
+    <color name="colorAccentRed">#c03810</color>
+
+
+    <color name="colorPrimaryPink">#ccc67a7e</color>
+    <color name="colorPrimaryDarkPink">#ccc67a7e</color>
+    <color name="colorAccentPink">#c67a7e</color>
+
+
+    <color name="colorPrimaryBlue">#cc9fa2d6</color>
+    <color name="colorPrimaryDarkBlue">#cc9fa2d6</color>
+    <color name="colorAccentBlue">#9fa2d6</color>
+
+
+
+<!--    Theme Colors list   -->
+<!--    <color name="colorTheme1">#ef9a9a</color>
+    <color name="colorTheme2">#f48fb1</color>
+    <color name="colorTheme3">#ce93d8</color>
+    <color name="colorTheme4">#b39ddb</color>
+    <color name="colorTheme5">#9fa8da</color>
+    <color name="colorTheme6">#90caf9</color>
+    <color name="colorTheme7">#81d4fa</color>
+    <color name="colorTheme8">#80deea</color>
+    <color name="colorTheme9">#80cbc4</color>
+    <color name="colorTheme10">#a5d6a7</color>
+    <color name="colorTheme11">#c5e1a5</color>
+    <color name="colorTheme12">#e6ee9c</color>
+    <color name="colorTheme13">#fff59d</color>
+    <color name="colorTheme14">#ffe082</color>
+    <color name="colorTheme15">#ffcc80</color>
+    <color name="colorTheme16">#ffab91</color>
+    <color name="colorTheme17">#bcaaa4</color>
+    <color name="colorTheme18">#eeeeee</color>
+    <color name="colorTheme19">#b0bec5</color>-->
+
+    <color name="colorTheme1">#987028</color>
+    <color name="colorTheme2">#0878c0</color>
+    <color name="colorTheme3">#501f18</color>
+    <color name="colorTheme4">#2788a8</color>
+    <color name="colorTheme5">#194069</color>
+    <color name="colorTheme6">#38587f</color>
+    <color name="colorTheme7">#093041</color>
+    <color name="colorTheme8">#c03810</color>
+    <color name="colorTheme9">#2788a8</color>
+    <color name="colorTheme10">#081027</color>
+    <color name="colorTheme11">#083038</color>
+    <color name="colorTheme12">#2f4867</color>
+    <color name="colorTheme13">#187fa8</color>
+    <color name="colorTheme14">#707018</color>
+    <color name="colorTheme15">#1788a8</color>
+    <color name="colorTheme16">#10182f</color>
+    <color name="colorTheme17">#083088</color>
+    <color name="colorTheme18">#58b028</color>
+    <color name="colorTheme19">#601009</color>
+    <color name="colorTheme20">#972848</color>
+    <color name="colorTheme21">#08a8c8</color>
+    <color name="colorTheme22">#272858</color>
+    <color name="colorTheme23">#58b028</color>
+    <color name="colorTheme24">#80100f</color>
+    <color name="colorTheme25">#38587f</color>
+    <color name="colorTheme26">#583881</color>
+    <color name="colorTheme27">#281010</color>
+    <color name="colorTheme28">#29789f</color>
+    <color name="colorTheme29">#686828</color>
+    <color name="colorTheme30">#904049</color>
+    <color name="colorTheme31">#286748</color>
+    <color name="colorTheme32">#083038</color>
+    <color name="colorTheme33">#812211</color>
+    <color name="colorTheme34">#fcb401</color>
+    <color name="colorTheme35">#72444f</color>
+    <color name="colorTheme36">#1d2538</color>
+    <color name="colorTheme37">#fe9e48</color>
+    <color name="colorTheme38">#c67a7e</color>
+    <color name="colorTheme39">#713d6b</color>
+    <color name="colorTheme40">#9fa2d6</color>
+    <color name="colorTheme41">#466486</color>
+    <color name="colorTheme42">#994d40</color>
+    <color name="colorTheme43">#52846b</color>
+    <color name="colorTheme44">#d09496</color>
+    <color name="colorTheme45">#77bf51</color>
+    <color name="colorTheme46">#49d0b0</color>
+    <color name="colorTheme47">#369c84</color>
+    <color name="colorTheme48">#90a850</color>
+    <color name="colorTheme49">#a0a998</color>
+    <color name="colorTheme50">#788188</color>
+    <color name="colorTheme51">#a09881</color>
+    <color name="colorTheme52">#7098b1</color>
+    <color name="colorTheme53">#80889f</color>
+    <color name="colorTheme54">#789988</color>
+    <color name="colorTheme55">#a0a998</color>
+    <color name="colorTheme56">#5f90b0</color>
+    <color name="colorTheme57">#a97069</color>
+    <color name="colorTheme58">#8090a9</color>
+    <color name="colorTheme59">#789198</color>
+    <color name="colorTheme60">#8f9080</color>
+    <color name="colorTheme61">#807778</color>
+    <color name="colorTheme62">#887857</color>
+    <color name="colorTheme63">#988050</color>
+    <color name="colorTheme64">#789198</color>
+    <color name="colorTheme65">#608f9f</color>
+    <color name="colorTheme66">#8f9080</color>
+    <color name="colorTheme67">#908788</color>
+    <color name="colorTheme68">#b8a060</color>
+    <color name="colorTheme69">#e83515</color>
+    <color name="colorTheme70">#5a296a</color>
+
+
+
+<!--    Theme Colors Array  -->
+    <array name="themeColors">
+        <item>@color/colorTheme1</item>
+        <item>@color/colorTheme2</item>
+        <item>@color/colorTheme3</item>
+        <item>@color/colorTheme4</item>
+        <item>@color/colorTheme5</item>
+        <item>@color/colorTheme6</item>
+        <item>@color/colorTheme7</item>
+        <item>@color/colorTheme8</item>
+        <item>@color/colorTheme9</item>
+        <item>@color/colorTheme10</item>
+        <item>@color/colorTheme11</item>
+        <item>@color/colorTheme12</item>
+        <item>@color/colorTheme13</item>
+        <item>@color/colorTheme14</item>
+        <item>@color/colorTheme15</item>
+        <item>@color/colorTheme16</item>
+        <item>@color/colorTheme17</item>
+        <item>@color/colorTheme18</item>
+        <item>@color/colorTheme19</item>
+        <item>@color/colorTheme20</item>
+        <item>@color/colorTheme21</item>
+        <item>@color/colorTheme22</item>
+        <item>@color/colorTheme23</item>
+        <item>@color/colorTheme24</item>
+        <item>@color/colorTheme25</item>
+        <item>@color/colorTheme26</item>
+        <item>@color/colorTheme27</item>
+        <item>@color/colorTheme28</item>
+        <item>@color/colorTheme29</item>
+        <item>@color/colorTheme30</item>
+        <item>@color/colorTheme31</item>
+        <item>@color/colorTheme32</item>
+        <item>@color/colorTheme33</item>
+        <item>@color/colorTheme34</item>
+        <item>@color/colorTheme35</item>
+        <item>@color/colorTheme36</item>
+        <item>@color/colorTheme37</item>
+        <item>@color/colorTheme38</item>
+        <item>@color/colorTheme39</item>
+        <item>@color/colorTheme40</item>
+        <item>@color/colorTheme41</item>
+        <item>@color/colorTheme42</item>
+        <item>@color/colorTheme43</item>
+        <item>@color/colorTheme44</item>
+        <item>@color/colorTheme45</item>
+        <item>@color/colorTheme46</item>
+        <item>@color/colorTheme47</item>
+        <item>@color/colorTheme48</item>
+        <item>@color/colorTheme49</item>
+        <item>@color/colorTheme50</item>
+        <item>@color/colorTheme51</item>
+        <item>@color/colorTheme52</item>
+        <item>@color/colorTheme53</item>
+        <item>@color/colorTheme54</item>
+        <item>@color/colorTheme55</item>
+        <item>@color/colorTheme56</item>
+        <item>@color/colorTheme57</item>
+        <item>@color/colorTheme58</item>
+        <item>@color/colorTheme59</item>
+        <item>@color/colorTheme60</item>
+        <item>@color/colorTheme61</item>
+        <item>@color/colorTheme62</item>
+        <item>@color/colorTheme63</item>
+        <item>@color/colorTheme64</item>
+        <item>@color/colorTheme65</item>
+        <item>@color/colorTheme66</item>
+        <item>@color/colorTheme67</item>
+        <item>@color/colorTheme68</item>
+        <item>@color/colorTheme69</item>
+        <item>@color/colorTheme70</item>
+
+    </array>
+
+
+
+</resources>

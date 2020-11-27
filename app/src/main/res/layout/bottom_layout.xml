@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/pb_song_main"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:background="@drawable/progress_drawable"
+        android:layout_height="@dimen/progress_bar_height"
+        android:layout_marginBottom="@dimen/progress_bar_margin_bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/common_image_padding"
+        android:paddingEnd="@dimen/common_image_padding"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="@dimen/iv_album_bottom_radius"
+            android:layout_gravity="center"
+            android:id="@+id/mcv_album_bottom"
+            android:background="@color/colorBackgroundSecondary"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/iv_album_bottom_width"
+                android:layout_height="@dimen/iv_album_bottom_height"
+                android:contentDescription="@string/album_icon"
+                android:background="@color/colorBackgroundSecondary"
+                android:id="@+id/iv_album_bottom"
+                android:scaleType="fitXY" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@+id/mcv_album_bottom"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="@dimen/song_layout_padding_left"
+            android:paddingEnd="@dimen/image_padding_right"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_layout_icon_width"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:id="@+id/image_view_play_previous_bottom_extra"
+                    android:src="@drawable/ic_action_previous"
+                    android:foreground="?attr/actionBarItemBackground"
+                    android:background="@drawable/button_background"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/previous_track"
+                    android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+                <com.robinhood.ticker.TickerView
+                    android:layout_width="wrap_content"
+                    android:text="@string/run_time"
+                    android:layout_weight="1"
+                    android:id="@+id/mtv_run_time"
+                    android:textColor="@color/colorTextPrimary"
+                    android:gravity="center"
+                    android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_layout_icon_width"
+                    android:src="@drawable/icon_play"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:id="@+id/image_view_extra_action_play_pause"
+                    android:foreground="?attr/actionBarItemBackground"
+                    android:background="@drawable/button_background"
+                    android:contentDescription="@string/play_pause"
+                    android:onClick="onBottomActionClicked"
+                    android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+                <com.robinhood.ticker.TickerView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/mtv_total_time"
+                    android:text="@string/total_time"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_layout_icon_width"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:id="@+id/image_view_play_next_bottom_extra"
+                    android:background="@drawable/button_background"
+                    android:src="@drawable/ic_action_next"
+                    android:foreground="?attr/actionBarItemBackground"
+                    android:contentDescription="@string/next_track"
+                    android:scaleType="fitCenter"
+                    android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+            </TableRow>
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/track_title"
+                android:id="@+id/song_title_bottom_playing_layout"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textColor="@color/colorTextPrimary"/>
+
+            <player.music.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextSecondary"
+                android:id="@+id/artist_name_bottom_playing_layout"
+                android:text="@string/artist_name"
+                android:paddingBottom="@dimen/text_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

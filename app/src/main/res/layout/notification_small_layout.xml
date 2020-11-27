@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorBackgroundPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/notification_small_controls_album_icon_width"
+        android:layout_height="@dimen/notification_small_controls_album_icon_height"
+        android:id="@+id/iv_album_art"
+        android:contentDescription="@string/album_icon"
+        android:src="@drawable/album_icon"
+        android:layout_marginEnd="@dimen/common_view_margin_right"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/common_view_margin_left"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/track_title"
+            android:singleLine="true"
+            android:id="@+id/mtv_track_title"
+            android:layout_marginBottom="@dimen/common_view_margin_bottom"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/artist_name"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/mtv_track_artist"
+            android:textColor="@color/colorTextSecondary"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/common_view_margin_bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/common_layout_margin_left"
+        android:layout_marginEnd="@dimen/common_layout_margin_right"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/notification_small_controls_width"
+            android:src="@drawable/ic_action_previous"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/iv_previous_track"
+            android:background="@drawable/button_overflow_selector"
+            android:contentDescription="@string/previous_track"
+            android:layout_height="@dimen/notification_small_controls_height" />
+
+        <ImageView
+            android:layout_width="@dimen/notification_small_controls_width"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/button_overflow_selector"
+            android:src="@drawable/icon_play"
+            android:contentDescription="@string/play_pause"
+            android:layout_marginLeft="@dimen/notification_small_controls_margin"
+            android:id="@+id/iv_play_pause"
+            android:layout_marginRight="@dimen/notification_small_controls_margin"
+            android:layout_height="@dimen/notification_small_controls_height" />
+
+        <ImageView
+            android:layout_width="@dimen/notification_small_controls_width"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/button_overflow_selector"
+            android:id="@+id/iv_next_track"
+            android:contentDescription="@string/next_track"
+            android:src="@drawable/ic_action_next"
+            android:layout_height="@dimen/notification_small_controls_height" />
+
+        <ImageView
+            android:layout_width="@dimen/notification_small_stop_service_width"
+            android:layout_height="@dimen/notification_small_stop_service_height"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="@dimen/notification_small_controls_margin"
+            android:layout_marginStart="@dimen/notification_small_controls_margin"
+            android:layout_marginRight="@dimen/notification_small_controls_margin"
+            android:layout_marginEnd="@dimen/notification_small_controls_margin"
+            android:contentDescription="@string/stop_service"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_stop_service"
+            android:src="@drawable/ic_stop_service" />
+
+    </LinearLayout>
+</LinearLayout>

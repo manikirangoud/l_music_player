@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:layout_height="@dimen/bottom_layout_height">
+
+    <ImageView
+        android:layout_width="@dimen/action_left_chevron_width"
+        android:contentDescription="@string/action_left_chevron"
+        android:src="@drawable/ic_action_left_chevron_dark"
+        android:background="@drawable/dv_medium_side_secondary"
+        android:id="@+id/view_bottom"
+        android:layout_height="@dimen/bottom_layout_height"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/view_bottom"
+        android:layout_toEndOf="@+id/view_bottom"
+        android:layout_height="@dimen/bottom_layout_height">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/extra_half_padding"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="@dimen/bottom_layout_icon_width"
+                android:id="@+id/iv_playlist_bottom"
+                android:src="@drawable/ic_playlist"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/actionBarItemBackground"
+                android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+            <ImageView
+                android:layout_width="@dimen/bottom_layout_icon_width"
+                android:id="@+id/iv_repeat_media_bottom"
+                android:src="@drawable/ic_action_repeat_off"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/actionBarItemBackground"
+                android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+            <ImageView
+                android:layout_width="@dimen/bottom_layout_icon_width"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/button_background"
+                android:src="@drawable/ic_action_shuffle_off"
+                android:foreground="?attr/actionBarItemBackground"
+                android:id="@+id/iv_shuffle_bottom"
+                android:layout_height="@dimen/bottom_layout_icon_height"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
